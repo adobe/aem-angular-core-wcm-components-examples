@@ -5,7 +5,7 @@ Provides either ready to use / extend components, or if you choose to write your
 
 Uses the following NPM modules:
 #### [Angular core components - base](https://github.com/adobe/aem-angular-core-wcm-components-base)
-#### [Anglar core components - spa](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+#### [Angular core components - spa](https://github.com/adobe/aem-angular-core-wcm-components-spa)
 
 ## Welcome
 
