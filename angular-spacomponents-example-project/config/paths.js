@@ -86,7 +86,7 @@ const clientLibPath = '/apps/core-components-examples/wcm/angular/clientlibs/ang
 // config after eject: we're in ./config/
 module.exports = {
     dotenv: resolveApp('.env'),
-    clientLibRoot: resolveApp('../../examples/ui.apps/src/content/jcr_root' + clientLibPath),
+    clientLibRoot: resolveApp('../ui.apps/src/content/jcr_root' + clientLibPath),
     appPath: resolveApp('.'),
     appBuild: resolveApp('build'),
     appDist: resolveApp('dist'),
