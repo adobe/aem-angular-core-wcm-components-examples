@@ -18,6 +18,7 @@ import {AemAngularCoreWcmComponentsContainerV1} from "@adobe/aem-core-components
 import {AemAngularCoreWcmComponentsTabsV1} from "@adobe/aem-core-components-angular-spa/containers/tabs/v1";
 import {AemAngularCoreWcmComponentsSeparatorV1} from "@adobe/aem-core-components-angular-base/authoring/separator/v1";
 import {AemAngularCoreWcmComponentsTeaserV1} from "@adobe/aem-core-components-angular-base/authoring/teaser/v1";
+import {SimpleComponent} from "./components/simplecomponent/simplecomponent.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {AemAngularCoreWcmComponentsTeaserV1} from "@adobe/aem-core-components-an
     DemoComponent,
     DemoJsonComponent,
     DemoPropertiesComponent,
-    DemoMarkupComponent
+    DemoMarkupComponent,
+    SimpleComponent
   ],
   imports: [
     BrowserModule.withServerTransition({
@@ -50,7 +52,8 @@ import {AemAngularCoreWcmComponentsTeaserV1} from "@adobe/aem-core-components-an
     DemoComponent,
     DemoJsonComponent,
     DemoPropertiesComponent,
-    DemoMarkupComponent
+    DemoMarkupComponent,
+    SimpleComponent
   ],
   bootstrap: [AppComponent]
 })
