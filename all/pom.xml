@@ -67,6 +67,16 @@
                             <artifactId>core.wcm.components.angular.examples.ui.apps</artifactId>
                             <filter>true</filter>
                         </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.apps</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.content</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
                     </subPackages>
                     <packageType>container</packageType>
                 </configuration>
@@ -185,6 +195,16 @@
                                     <artifactId>core.wcm.components.content</artifactId>
                                     <filter>true</filter>
                                 </subPackage>
+                                <subPackage>
+                                    <groupId>com.adobe.acs</groupId>
+                                    <artifactId>acs-aem-commons-ui.apps</artifactId>
+                                    <filter>true</filter>
+                                </subPackage>
+                                <subPackage>
+                                    <groupId>com.adobe.acs</groupId>
+                                    <artifactId>acs-aem-commons-ui.content</artifactId>
+                                    <filter>true</filter>
+                                </subPackage>
                             </subPackages>
                             <dependencies>
                                 <dependency>
@@ -243,6 +263,18 @@
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>spa.project.core.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.content</artifactId>
+            <version>${acs.commons.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.apps</artifactId>
+            <version>${acs.commons.version}</version>
+            <type>zip</type>
         </dependency>
     </dependencies>
 </project>

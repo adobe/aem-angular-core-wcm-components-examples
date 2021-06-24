@@ -27,6 +27,8 @@ import {ContainerV1Component} from "@adobe/aem-core-components-angular-spa/conta
 import {AccordionV1Properties} from "@adobe/aem-core-components-angular-spa/containers/accordion/v1";
 import {CarouselV1Properties} from "@adobe/aem-core-components-angular-spa/containers/carousel/v1";
 import {TextComponentProperties} from "./components/text/text.component";
+import {DefaultV1Component, DefaultV1IsEmptyFn} from "@adobe/aem-core-components-angular-base/authoring/default/v1";
+import {SimpleComponent} from "./components/simplecomponent/simplecomponent.component";
 
 @Component({
   selector: 'app-root',
@@ -73,6 +75,10 @@ export class AppComponent implements OnInit{
     MapTo('core-components-examples/wcm/angular/components/text')(TextV2Component, {isEmpty: TextV2IsEmptyFn});
     MapTo('core-components-examples/wcm/angular/components/experience-fragment')(AEMContainerComponent, {isEmpty: (props) => !props.configured });
     MapTo('core-components-examples/wcm/angular/components/separator')(SeparatorV1Component);
+
+    MapTo('core-components-examples/wcm/angular/components/normalcomponent')(DefaultV1Component, {isEmpty: DefaultV1IsEmptyFn})
+    MapTo('core-components-examples/wcm/angular/components/simplecomponent')(SimpleComponent);
+
 
     //lazy component mapping (loosely typed)
     LazyMapTo('core-components-examples/wcm/angular/components/download')(()=>import('@adobe/aem-core-components-angular-base/authoring/download/v1').then((m) => m.DownloadV1Component), {isEmpty: DownloadV1IsEmptyFn});
